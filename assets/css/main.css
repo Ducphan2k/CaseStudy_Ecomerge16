@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  padding: 5px 0;
+}
+.header_top {
+  display: flex;
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.5019607843);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5em;
+  opacity: 0.7 !important;
+}
+.header_top_phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 7px;
+}
+.header_top_phone p {
+  margin: 0;
+}
+.header_top_email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 7px;
+}
+.header_top_email p {
+  margin: 0;
+}
+.header_top_time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 7px;
+}
+.header_top_time p {
+  margin: 0;
+}
+.header_nav {
+  background-color: rgb(255, 220, 220);
+}
+.header_slide {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.nav-hover:hover {
+  color: #FFC068;
+}
+
+.carousel-content h1 {
+  font-family: "Monoton", cursive;
+  font-size: 4em;
+}
+
+.slide-btn1 {
+  font-size: 1em;
+  padding: 1em 1.5em;
+  border-radius: 4px;
+  border: none;
+  background-color: #FFA323;
+  color: #fff;
+}
+
+.slide-btn1:hover {
+  border: 1px solid #FFA323;
+  background-color: transparent;
+  color: #FFA323;
+}
+
+.slide-btn2 {
+  font-size: 1em;
+  padding: 1em 1.5em;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.slide-btn2:hover {
+  color: #FFA323;
+  background-color: #fff;
+}
+
+.Content {
+  display: block;
+}/*# sourceMappingURL=main.css.map */
