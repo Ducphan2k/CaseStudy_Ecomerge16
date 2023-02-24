@@ -36,14 +36,17 @@
           <p>Open hours: Monday - Sunday 8:00AM - 9:00PM</p>
         </div>
       </div>
-
-      <div class="header_nav">
+    </div>
+    <div class="header_nav">
+      <div class="wrap-nav">
         <nav
-          class="navbar navbar-expand-lg navbar-dark bg-dark"
-          aria-label="Offcanvas navbar large"
+          class="navbar navbar-expand-lg"
+          aria-label="Offcanvas navbar large header_nav"
         >
           <div class="container-fluid pe-5 ps-5">
-            <a class="navbar-brand fw-bold" href="#">Appetizer</a>
+            <a class="navbar-brand fw-bold text-white fs-2" href="#"
+              >Appetizer</a
+            >
             <button
               class="navbar-toggler"
               type="button"
@@ -72,7 +75,7 @@
               </div>
               <div class="offcanvas-body">
                 <ul
-                  class="navbar-nav align-content-center justify-content-end flex-grow-1 pe-3"
+                  class="navbar-nav margin-nav align-content-center justify-content-end flex-grow-1 pe-3"
                 >
                   <li class="nav-item d-flex align-content-center pe-4">
                     <a class="nav-link align-self-center nav-hover" href="#"
@@ -114,119 +117,777 @@
           </div>
         </nav>
       </div>
-
-      <div class="header_slide">
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active carousel-image">
+    </div>
+    <div class="header_slide">
+      <div id="carouselExampleIndicators" class="carousel slide h-100">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active carousel-image">
+            <div class="slide-content">
               <img
                 src="./assets/images/bg_1.jpg"
                 alt="slide-image1"
-                style="width: 100%"
+                class="w-100 h-100 object-fit-cover"
               />
-              <div class="carousel-content">
-                <h1>Our Delicious Specialties</h1>
-                <button class="slide-btn1">Order Now</button>
-                <button class="slide-btn2">View Menu</button>
-              </div>
-            </div>
-            <div class="carousel-item active carousel-image">
-              <img
-                src="./assets/images/bg_2.jpg"
-                alt="slide-image2"
-                style="width: 100%"
-              />
-              <div class="carousel-content">
-                <h1>The Best Place to Kick of Your Day</h1>
-                <button class="slide-btn1">Order Now</button>
-                <button class="slide-btn2">View Menu</button>
-              </div>
-            </div>
-            <div class="carousel-item active carousel-image">
-              <img
-                src="./assets/images/bg_3.jpg"
-                alt="slide-image3"
-                style="width: 100%"
-              />
-              <div class="carousel-content">
-                <h1>Creamy Hot and Ready to Serve</h1>
-                <button class="slide-btn1">Order Now</button>
-                <button class="slide-btn2">View Menu</button>
+              <div
+                class="carousel-content position-absolute z-1 align-self-center d-flex flex-column text-white"
+              >
+                <h1 class="text-center">
+                  The Best Place to Kick <br />
+                  of Your Day
+                </h1>
+
+                <div>
+                  <button class="slide-btn1">Order Now</button>
+                  <button class="slide-btn2">View Menu</button>
+                </div>
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item carousel-image">
+            <div class="slide-content">
+              <img
+                src="./assets/images/bg_2.jpg"
+                alt="slide-image1"
+                class="w-100 h-100 object-fit-cover"
+              />
+              <div
+                class="carousel-content position-absolute z-1 align-self-center d-flex flex-column text-white"
+              >
+                <h1 class="text-center">
+                  Our Delicious <br />
+                  Specialties
+                </h1>
+                <div>
+                  <button class="slide-btn1">Order Now</button>
+                  <button class="slide-btn2">View Menu</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-image">
+            <div class="slide-content">
+              <img
+                src="./assets/images/bg_3.jpg"
+                alt="slide-image1"
+                class="w-100 h-100 object-fit-cover"
+              />
+              <div
+                class="carousel-content position-absolute z-1 align-self-center d-flex flex-column text-white"
+              >
+                <h1 class="text-center">
+                  Creamy Hot and <br />
+                  Ready to Serve
+                </h1>
+
+                <div>
+                  <button class="slide-btn1">Order Now</button>
+                  <button class="slide-btn2">View Menu</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
 
     <!-- Content -->
     <div class="Content">
-      <div class="Content_intro">
-        <div class="content_intro-text">
-          <div class="">
-            <span>About</span>
-            <h2>Appetizer Restaurant</h2>
+      <div class="content_intro">
+        <div class="Content_intro-wrap container">
+          <div class="content_intro-header row justify-content-center">
+            <div class="col-sm-10 text-center">
+              <div class="heading-section">
+                <span class="sub-heading">About</span>
+                <h2>Appetizer Restaurant</h2>
+              </div>
+              <p>
+                On her way she met a copy. The copy warned the Little Blind
+                Text, that where it came from it would have been rewritten a
+                thousand times and everything that was left from its origin
+                would be the word "and" and the Little Blind Text should turn
+                around and return to its own, safe country. A small river named
+                Duden flows by their place and supplies it with the necessary
+                regelialia. It is a paradisematic country, in which roasted
+                parts of sentences fly into your mouth.
+              </p>
+            </div>
+            <div class="content_intro-video justify-content-center">
+              <a
+                href="#"
+                target="_blank"
+                class="icon-video popup-vimeo d-flex justify-content-center align-items-center text-decoration-none text-white"
+              >
+                <i class="fa-sharp fa-solid fa-play fs-5"></i>
+              </a>
+            </div>
           </div>
-          <p>
-            On her way she met a copy. The copy warned the Little Blind Text,
-            that where it came from it would have been rewritten a thousand
-            times and everything that was left from its origin would be the word
-            "and" and the Little Blind Text should turn around and return to its
-            own, safe country. A small river named Duden flows by their place
-            and supplies it with the necessary regelialia. It is a paradisematic
-            country, in which roasted parts of sentences fly into your mouth.
-          </p>
         </div>
-        <div class="content_intro-video">
-          
+        <div
+          class="content-intro-section"
+          style="
+            background-image: url(./assets/images/bg_4.jpg);
+            height: 316px;
+            width: 100%;
+            background-position: 50%-222px;
+          "
+        >
+          <div class="container">
+            <div
+              class="row d-md-flex align-items-center justify-content-center intro-section-des"
+            >
+              <div class="col-lg-10">
+                <div class="row d-md-flex align-items-center">
+                  <div class="col-md d-flex justify-content-center">
+                    <div class="intro-block">
+                      <div class="text">
+                        <strong class="number">18</strong>
+                        <span>Years of Experienced</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md d-flex justify-content-center">
+                    <div class="intro-block">
+                      <div class="text">
+                        <strong class="number">15,000</strong>
+                        <span>Happy Customers</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md d-flex justify-content-center">
+                    <div class="intro-block">
+                      <div class="text">
+                        <strong class="number">100</strong>
+                        <span>Menus</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md d-flex justify-content-center">
+                    <div class="intro-block">
+                      <div class="text">
+                        <strong class="number">20</strong>
+                        <span>Staffs</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="Content_Services"></div>
+      <div class="Content_Services">
+        <div class="container">
+          <div class="Content_Services-header row justify-content-center">
+            <div class="col-md-7 text-center heading-section">
+              <span class="sub-heading">Services</span>
+              <h2>Catering Services</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 d-flex text-center">
+              <div class="Services-block d-block">
+                <div
+                  class="Services-icon d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-cake-candles"></i>
+                </div>
+                <div class="Services-text">
+                  <h3>Birthday Party</h3>
+                  <p>
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex text-center">
+              <div class="Services-block d-block">
+                <div
+                  class="Services-icon d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-people-carry-box"></i>
+                </div>
+                <div class="Services-text">
+                  <h3>Business Meetings</h3>
+                  <p>
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex text-center">
+              <div class="Services-block d-block">
+                <div
+                  class="Services-icon d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-plate-wheat"></i>
+                </div>
+                <div class="Services-text">
+                  <h3>Wedding Party</h3>
+                  <p>
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="Content_Specialties"></div>
+      <div class="Content_Specialties">
+        <div class="container-fluid">
+          <div class="Content_Specialties-header row justify-content-center">
+            <div class="col-md-7 text-center heading-section">
+              <span class="sub-heading">Specialties</span>
+              <h2>Our Menu</h2>
+            </div>
+          </div>
+          <div class="row Content_Specialties-body">
+            <div class="col-md-6 col-lg-4 menu-wrap">
+              <div class="menu-title">
+                <h3>Breakfast</h3>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/breakfast-1.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Beef with potatoes</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/breakfast-2.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Crab with Onions</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/breakfast-3.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Crab with Onion</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-6 col-lg-4 menu-wrap">
+              <div class="menu-title">
+                <h3>Lunch</h3>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/lunch-1.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Beef with potatoes</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/lunch-2.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Crab with Onions</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/lunch-3.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Crab with Onion</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-6 col-lg-4 menu-wrap">
+              <div class="menu-title">
+                <h3>Dinner</h3>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/dinner-1.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Beef with potatoes</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/dinner-2.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Crab with Onions</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/dinner-3.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Crab with Onion</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-6 col-lg-4 menu-wrap">
+              <div class="menu-title">
+                <h3>Desserts</h3>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/dessert-1.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Beef with potatoes</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/dessert-2.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Crab with Onions</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/dessert-3.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Crab with Onion</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-6 col-lg-4 menu-wrap">
+              <div class="menu-title">
+                <h3>Wine Card</h3>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/wine-1.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Beef with potatoes</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/wine-2.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Crab with Onions</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/wine-3.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Crab with Onion</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-6 col-lg-4 menu-wrap">
+              <div class="menu-title">
+                <h3>Drinks</h3>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/drink-1.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Beef with potatoes</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/drink-2.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Crab with Onions</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+              <div class="menu-dish d-flex">
+                <div
+                  class="menu-dish-img"
+                  style="background-image: url(./assets/images/drink-3.jpg)"
+                ></div>
+                <div class="menu-dish-text">
+                  <div class="d-flex">
+                    <div class="dish-name">
+                      <h4>Grilled Crab with Onion</h4>
+                    </div>
+                    <div class="dish-price">
+                      <span>$29</span>
+                    </div>
+                  </div>
+                  <p>
+                      <span>Meat,</span> 
+                      <span>Potatoes,</span>
+                      <span>Rice,</span> 
+                      <span>Tomatoe</span>
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="Content_Book-a-table"></div>
+      <div class="Content_Book">
+        <div class="container-fluid Content_Book-container">
+          <div class="row d-flex Content_Book-wrap">
+            <div class="col-md-6 Content_Book-left">
+              <div class="Content_Book-header heading-section">  
+                <span class="sub-heading">Book a table</span>
+                <h2>Make Reservation</h2>
+              </div>
+              <form action="#">
+                <div class="row">
+                  <div class="col-md-6 Book-info">
+                    <div class="form">
+                      <label for="">Name</label>
+                      <input type="text" class="form-input" placeholder="Your Name">
+                    </div>
+                  </div>
+                   <div class="col-md-6 Book-info">
+                    <div class="form">
+                      <label for="">Email</label>
+                      <input type="text" class="form-input" placeholder="Your Email">
+                    </div>
+                  </div>
+                   <div class="col-md-6 Book-info">
+                    <div class="form">
+                      <label for="">Phone</label>
+                      <input type="text" class="form-input" placeholder="Phone">
+                    </div>
+                  </div>
+                   <div class="col-md-6 Book-info">
+                    <div class="form">
+                      <label for="">Phone</label>
+                      <input type="text" class="form-input" placeholder="Date">
+                    </div>
+                  </div>
+                   <div class="col-md-6 Book-info">
+                    <div class="form">
+                      <label for="">Time</label>
+                      <input type="text" class="form-input" placeholder="Time">
+                    </div>
+                  </div>
+                   <div class="col-md-6 Book-info">
+
+                    <div class="form">
+                      <label for="">Person</label>
+                      <div class="number-person">
+                        <div class="number-person-icon">
+                       
+                      </div>
+                      <select name="" id="" class="form-input">
+                        <option value="">Person</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4+</option>
+                      </select>
+                    </div>
+                  </div>
+                
+                </div>
+                  <div class="col-md-12 wrap-form">
+                    <div class="form">
+                      <input type="submit" value="Make a Reservation" class="form-btn"> 
+                    </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+           <div class="col-md-6">
+             <img src="./assets/images/gmap.png" class="object-fit-cover w-100" alt="map">
+            </div>
+        </div>
+      </div>
 
       <div class="Content_Chef"></div>
 
