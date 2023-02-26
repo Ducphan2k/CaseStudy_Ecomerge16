@@ -11,6 +11,7 @@
    -Book a table
    -Chef
    -Testimony(Feedbacks)
+   -Image
 
 3. Footer
    -Contact
