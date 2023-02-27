@@ -248,6 +248,7 @@ body {
 .Content_Services {
   padding: 7em;
   background-color: #fafafa;
+  margin-top: -80px;
 }
 
 .Content_Services-header {
@@ -800,6 +801,15 @@ body {
     display: none;
   }
 
+  .header_nav{
+    background: #000;
+    opacity: 0.9;
+    top: 0;
+    height: 5em;
+  }
+
+ 
+
   .carousel-content h1 {
     font-size: 2rem;
   }
@@ -810,4 +820,7 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+
+
 }
